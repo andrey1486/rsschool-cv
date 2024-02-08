@@ -1,10 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body></body>
+    <link rel="stylesheet" href="normalize.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,regular,500&display=swap" rel="stylesheet">
+    <title>CV</title>
+  </head>
+
+<body>
+    <div class="container">
+		<div class="content">
+			<aside class="aside">
+				<div class="photo-section">
+					<img src="assets/img/avatar.jpg" alt="Avatar" class="photo-item">
+				</div>
+				<section class="education-section" id="education-section">
+					<h2 class="section-header">Education</h2>
+					<div class="education-item">
+						2004-2009
+						<br>
+						Poltava University of Economics and Trade
+						<ul>
+							<li>
+								Computer science 
+							</li>
+						</ul>
+					</div>
+					<div class="education-item">
+						2021
+						<br>
+						Course
+						<ul>
+							<li>
+								<a href="https://htmlacademy.ru/" target="_blank">Нtml academy</a>
+							</li>
+							<li>
+								<a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a>
+							</li>
+						</ul>
+					</div>
+					<div class="education-item">
+						2022
+						<br>
+						Udemy
+						<ul>
+							<li>
+								<a href="https://www.udemy.com/course/webdeveloper/" target="_blank">HTML/CSS</a>
+							</li>
+							<li>
+								<a href="https://www.udemy.com/course/javascript_full/" target="_blank">JavaScript</a>
+							</li>
+							
+			
+							
+						</ul>
+					</div>
+				</section>
+
+
+				<section class="skill-section" id="skill-section">
+					<h2 class="section-header">Skills</h2>
+					<ul class="skill-list">
+						<li class="skill-item"> 
+							<h3 class="skill-header">HTML &amp; CSS</h3>
+							<div class="progress-bar">
+								<div class="progress-wrapper">
+									<div class="progress"></div>
+								</div>
+								<div class="progress-value">
+									80%
+								</div>
+							</div>
+						</li>
+						<li class="skill-item">
+							<h3 class="skill-header">JavaScript/ES6</h3>
+							<div class="progress-bar">
+								<div class="progress-wrapper">
+									<div class="progress"></div>
+								</div>
+								<div class="progress-value">
+									70%
+								</div>
+							</div>
+						</li>
+						<li class="skill-item">
+							<h3 class="skill-header">Git</h3>
+							<div class="progress-bar">
+								<div class="progress-wrapper">
+									<div class="progress"></div>
+								</div>
+								<div class="progress-value">
+									70%
+								</div>
+							</div>
+						</li>
+						<li class="skill-item">
+							<h3 class="skill-header">TypeScript</h3>
+							<div class="progress-bar">
+								<div class="progress-wrapper">
+									<div class="progress"></div>
+								</div>
+								<div class="progress-value">
+									30%
+								</div>
+							</div>
+						</li>
+						<li class="skill-item">
+							<h3 class="skill-header">Webpack</h3>
+							<div class="progress-bar">
+								<div class="progress-wrapper">
+									<div class="progress"></div>
+								</div>
+								<div class="progress-value">
+									30%
+								</div>
+							</div>
+						</li>
+					</ul>
+				</section>
+				</aside>
+				<main class="main">
+					<header class="header">
+						<h1>Andriy Chervonyuk</h1>
+						<nav class="nav">
+							<ul class="menu">
+								<li class="menu-item">
+									<a class="menu-link" href="#education-section">Education</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="#skill-section">Skills</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="#about-me">About me</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="#code-examples">Code example</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="#projects">Projects</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="#hobbies">Hobbies</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="#contacts">Contacts</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+					<section class="about-me" id="about-me">
+						<h2 class="section-header">About me</h2>
+						<div class="information"> My name is Andriy!
+							<br>
+							All my free time I devote to learning Front-end direction. I'm interested in JavaScript, TypeScript, React.
+							So I clear decided to change my professional sphere. IT will make me more demanded and will prove my old dream.
+							<br><br>			
+											Languages:
+							<ul>
+								<li>Ukrainian - Native</li>
+								<li>Russian - Proficiency</li>
+								<li>English - Intermediate</li>
+							</ul>
+						</div>
+					</section>
+					<div class="flex-wrapper">
+						<section class="code-examples flex-section" id="code-examples">
+							<h2 class="section-header">Code Example</h2>
+							
+								<code>
+									const createDreamTeam = (members) => {
+										if (!Array.isArray(members)) return false
+										return members
+										   .filter(m => typeof m === 'string')
+										   .map(m => m.trim()[0].toUpperCase())
+										   .sort()
+										   .join('')
+									 }
+									</code>
+						</section>
+						<section class="projects flex-section" id="projects">
+							<h2 class="section-header">Projects</h2>
+							<div class="project-item">
+								<a href=" https://rolling-scopes-school.github.io/andrey1486-JSFE2022Q3/online-zoo/pages/main/ " target="_blank">
+									<img class="projects_image" src="assets/img/zoo.jpg" alt="ZOO"><br>online-zoo</a>
+								<br>
+							
+							</div>
+						</section> 
+						<section class="hobbies flex-section" id="hobby">
+							<h2 class="section-header">My hobby:</h2>
+							<div class="hobbies-item">
+								<ul>
+									<li>Cycling</li>
+									<li>Gym</li>
+									<li>Foto</li>
+									<li>Reading</li>
+									<li>Play the Guitar</li>
+								</ul>
+							</div>
+						</section>
+					</div>
+					<section class="contacts" id="contacts">
+						<h2 class="section-header">Contacts</h2>
+						<ul class="contacts-list">
+							<li class="contact-item">
+								<a href="tel:+38066841076" class="contact-link" target="_blank">
+									<img src="assets/icon/contact-us.png" class="contact-icon" alt="Number">
+								</a>
+							</li>
+							<li class="contact-item">
+								<a href="mailto:chervonukandrey@gmail.com" class="contact-link" target="_blank">
+									<img src="assets/icon/mail.png" class="contact-icon" alt="Mail">
+								</a>
+							</li>
+							<!-- <li class="contact-item">
+								<a href="№" class="contact-link" target="_blank">
+									<img src="icon/telegram.png" class="contact-icon" alt="Telegram">
+								</a>
+							</li> -->
+							<li class="contact-item">
+								<a href="https://github.com/andrey1486" class="contact-link" target="_blank">
+									<img src="assets/icon/github.png" class="contact-icon" alt="Github">
+								</a>
+							</li>
+						</ul>
+					</section>
+					
+				</main>
+			</div>
+				<footer class="footer">
+					<a href="https://github.com/andrey1486" target="_blank"  class="footer-link">
+						<img src="assets/icon/github.png" alt="Github" class="footer-logo">
+					</a>
+					<a href="https://rs.school/js/" target="_blank" class="footer-link">
+						<img src="assets/icon/logo_rs2.svg" alt="RS School" class="footer-logo">
+					</a>
+					<p>
+						Created	in 2022
+					</p>
+				</footer>
+		
+    </div>
+</body>
+
 </html>
